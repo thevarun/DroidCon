@@ -4,18 +4,12 @@
         android:id="@+id/menu_title"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/menu_title"/>
+        android:title="@string/post_title"/>
     <item
         android:id="@+id/action_refresh"
         android:icon="@drawable/ic_action_refresh"
         android:showAsAction="ifRoom"
         android:title="@string/action_refresh">
-    </item>
-    <item
-        android:id="@+id/action_favorites"
-        android:icon="@drawable/ic_action_favorite"
-        android:showAsAction="ifRoom"
-        android:title="@string/action_favorite">
     </item>
     <item
         android:id="@+id/action_new"

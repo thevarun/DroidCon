@@ -1,24 +1,20 @@
 <resources>
 
-    <string name="app_name">MealSpotting</string>
+    <string name="app_name">DroidCon</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_meal_list">MealSpotting</string>
-    <string name="title_activity_new_meal">NewMealActivity</string>
+    <string name="title_activity_post_list">UserPosts</string>
+    <string name="title_activity_new_post">NewPostActivity</string>
     <string name="action_refresh">Refresh</string>
-    <string name="action_favorite">Favorites</string>
-    <string name="action_new">Add a Meal</string>
-    <string name="menu_title">My Meals</string>
-    <string name="meal_label">Add a Meal</string>
+    <string name="action_new">Add a Post</string>
+    <string name="post_title">My Posts</string>
+    <string name="post_label">Add a Post</string>
     <string name="save_button_text">Save</string>
     <string name="cancel_button_text">Cancel</string>
+    <string name="login">Log in</string>
+    <string name="signup">Sign up</string>
+    <string name="powered_by">Powered by</string>
+    <string name="parse">Parse</string>
+    <string name="slogan">Lets start using Parse!</string>
 
-    <string-array name="ratings_array">
-        <item>5</item>
-        <item>4</item>
-        <item>3</item>
-        <item>2</item>
-        <item>1</item>
-        <item></item>
-    </string-array>
 
 </resources>

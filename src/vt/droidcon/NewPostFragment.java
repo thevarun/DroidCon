@@ -50,7 +50,7 @@ public class NewPostFragment extends Fragment {
 			Bundle SavedInstanceState) {
 		View v = inflater.inflate(R.layout.fragment_new_post, parent, false);
 
-		postTitle = ((EditText) v.findViewById(R.id.meal_name));
+		postTitle = ((EditText) v.findViewById(R.id.post_name));
 
 		// The mealRating spinner lets people assign favorites of meals they've
 		// eaten.

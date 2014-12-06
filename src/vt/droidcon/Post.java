@@ -30,7 +30,14 @@ public class Post extends ParseObject {
 		return getParseUser("author");
 	}
 
+	public String getAuthorName() {
+		String name =  getString("authorName");
+		if (name != null)
+			return name;
+		else return "Anonymous";
+	}
 	public void setAuthor(ParseUser user) {
+		put("authorName", user.getUsername());
 		put("author", user);
 	}
 

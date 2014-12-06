@@ -8,25 +8,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:text="@string/post_title"
+        android:text="@string/new_post_fragment_title"
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/meal_name"
+        android:id="@+id/post_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textMultiLine" />
 
-    <Spinner
-        android:id="@+id/rating_spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <ImageButton
         android:id="@+id/photo_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_action_photo" />
+        android:src="@drawable/ic_action_photo"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/save_button"

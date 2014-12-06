@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.parse.ParseQueryAdapter;
+import com.parse.ParseUser;
 import com.vt.droidcon.R;
 
 public class PostListActivity extends ListActivity {
@@ -19,9 +20,9 @@ public class PostListActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		getListView().setClickable(false);
 
-		mainAdapter = new ParseQueryAdapter<Post>(this, Post.class);
-		mainAdapter.setTextKey("title");
-		mainAdapter.setImageKey("photo");
+		mainAdapter = new MyParseCloudAdapter(this, Post.class);
+	//	mainAdapter.setTextKey("title");
+	//	mainAdapter.setImageKey("photo");
 
 		// Default view is all meals
 		setListAdapter(mainAdapter);
@@ -29,7 +30,7 @@ public class PostListActivity extends ListActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.activity_meal_list, menu);
+		getMenuInflater().inflate(R.menu.activity_post_list, menu);
 		return true;
 	}
 
@@ -49,6 +50,12 @@ public class PostListActivity extends ListActivity {
 
 		case R.id.action_new: {
 			newPost();
+			break;
+		}
+		case R.id.action_logout: {
+			ParseUser.logOut();		
+			startActivity(new Intent(this, DispatchActivity.class));
+			finish();
 			break;
 		}
 		}

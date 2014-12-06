@@ -6,7 +6,8 @@
     <string name="title_activity_new_post">NewPostActivity</string>
     <string name="action_refresh">Refresh</string>
     <string name="action_new">Add a Post</string>
-    <string name="post_title">My Posts</string>
+    <string name="action_logout">Log Out</string>
+    <string name="new_post_fragment_title">Create Post</string>
     <string name="post_label">Add a Post</string>
     <string name="save_button_text">Save</string>
     <string name="cancel_button_text">Cancel</string>

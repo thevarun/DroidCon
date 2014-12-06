@@ -90,7 +90,7 @@ public class LoginActivity extends Activity {
     ParseUser.logInInBackground(username, password, new LogInCallback() {
       @Override
       public void done(ParseUser user, ParseException e) {
-        dialog.dismiss();
+        if(dialog != null) dialog.dismiss();
         if (e != null) {
           // Show the error message
           Toast.makeText(LoginActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();

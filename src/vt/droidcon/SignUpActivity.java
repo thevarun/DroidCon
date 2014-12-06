@@ -107,7 +107,7 @@ public class SignUpActivity extends Activity {
     user.signUpInBackground(new SignUpCallback() {
       @Override
       public void done(ParseException e) {
-        dialog.dismiss();
+        if(dialog != null) dialog.dismiss();
         if (e != null) {
           // Show the error message
           Toast.makeText(SignUpActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();

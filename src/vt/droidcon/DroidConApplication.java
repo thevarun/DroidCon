@@ -22,7 +22,7 @@ public class DroidConApplication extends Application {
 		/*
 		 * Fill in this section with your Parse credentials
 		 */
-		Parse.initialize(this, "S7k2E1TuNwjfR7Ammx06B4ASPzAUXkhhSRNmzVU3", "qWy4Lp18wBfC0eCAXwYcDCrnRZZVW5Uc7ML4HdXE");
+		Parse.initialize(this, "MY_APP_ID", "MY_CLIENT_ID");
 
 		/*
 		 * This app lets an anonymous user create and save photos of meals
